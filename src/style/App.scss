@@ -1,0 +1,48 @@
+
+.title {
+  display: flex;
+  justify-content: center ;
+  font-size: 35px;
+  margin: 1% 0;
+  color: #fff;
+}
+
+.container {
+  background-color: rgb(54, 50, 50);
+  max-width: 80%;
+  margin: 0 auto;
+  column-count: 2;
+  padding: 10px 0;
+  column-gap: 5%;
+
+  @media screen and (max-width: 1300px) {
+    column-count: 1;
+    width: 100%;
+  }
+}
+
+.loader_bg {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+
+    h6 {
+      font-size: 35px;
+      color: #fff;
+      letter-spacing: 4px;
+    }
+
+    .loader {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #32729c;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg) }
+      100% { transform: rotate(360deg) }
+    }
+}
