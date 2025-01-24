@@ -8,13 +8,12 @@
 
 .container {
   background-color: rgb(54, 50, 50);
-  max-width: 80%;
+  max-width: 75%;
   margin: 0 auto;
   -moz-column-count: 2;
        column-count: 2;
-  padding: 10px 0;
-  -moz-column-gap: 5%;
-       column-gap: 5%;
+  -moz-column-gap: 3%;
+       column-gap: 3%;
 }
 @media screen and (max-width: 1300px) {
   .container {
@@ -49,4 +48,16 @@
   100% {
     transform: rotate(360deg);
   }
+}
+
+.container-btn {
+  display: flex;
+  justify-content: center;
+}
+.container-btn button {
+  margin: 0 0.5% 2%;
+  background-color: rgb(54, 50, 50);
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
 }/*# sourceMappingURL=App.css.map */

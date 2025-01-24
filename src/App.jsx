@@ -1,7 +1,7 @@
 import axios from 'axios'
 import { useState, useEffect } from 'react'
 import './style/App.css'
-import Post from './Post'
+import Pagination from './Pagination'
 export default function App() {
 
   const [data, setdata] = useState([])
@@ -33,11 +33,7 @@ export default function App() {
   return (
     <>
       <div className="title">Посты</div>
-      <div className="container">
-        {data.map(p => (
-          <Post userid={p.userId} id={p.id} title={p.title} body={p.body} />
-        ))}
-      </div>
+      <Pagination items={data} />
     </>
   )
 }

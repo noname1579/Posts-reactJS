@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-
+$bg: rgb(54, 50, 50);
 * {
   margin: 0;
   padding: 0;
@@ -8,7 +8,7 @@
 }
 
 html, body{
-  background-color: rgb(54, 50, 50);
+  background-color: $bg;
   scroll-behavior: smooth;
   font-family: "Roboto", serif;
 
@@ -17,10 +17,10 @@ html, body{
       padding: 2%;
       border-radius: 15px;
       max-width: 800px;
-      margin-bottom: 10%;
+      margin-bottom: 5%;
 
       @media screen and (min-width: 1300px) {
-        height: 340px;
+        height: 230px;
       }
 
       @media screen and (max-width: 1300px) {
@@ -30,12 +30,15 @@ html, body{
 
       h2 {
         font-size: 20px;
+        justify-content: center;
+        display: flex;
+        margin-top: calc(230px - p);
       }
 
       h1 {
         color: black;
         font-size: 22px;
-        margin-top: 10%;
+        margin-top: 2%;
         display: flex;
         justify-content: center;
       }

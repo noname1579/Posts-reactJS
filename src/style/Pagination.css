@@ -1,0 +1,10 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+}
+.pagination button {
+  margin: 1% 6%;
+  font-size: 40px;
+  color: azure;
+  background-color: rgb(54, 50, 50);
+}/*# sourceMappingURL=pagination.css.map */

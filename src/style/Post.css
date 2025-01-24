@@ -16,11 +16,11 @@ html .post, body .post {
   padding: 2%;
   border-radius: 15px;
   max-width: 800px;
-  margin-bottom: 10%;
+  margin-bottom: 5%;
 }
 @media screen and (min-width: 1300px) {
   html .post, body .post {
-    height: 340px;
+    height: 230px;
   }
 }
 @media screen and (max-width: 1300px) {
@@ -31,11 +31,14 @@ html .post, body .post {
 }
 html .post h2, body .post h2 {
   font-size: 20px;
+  justify-content: center;
+  display: flex;
+  margin-top: calc(230px - p);
 }
 html .post h1, body .post h1 {
   color: black;
   font-size: 22px;
-  margin-top: 10%;
+  margin-top: 2%;
   display: flex;
   justify-content: center;
 }

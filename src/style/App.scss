@@ -1,3 +1,4 @@
+$bg: rgb(54, 50, 50);
 
 .title {
   display: flex;
@@ -8,12 +9,11 @@
 }
 
 .container {
-  background-color: rgb(54, 50, 50);
-  max-width: 80%;
+  background-color: $bg;
+  max-width: 75%;
   margin: 0 auto;
   column-count: 2;
-  padding: 10px 0;
-  column-gap: 5%;
+  column-gap: 3%;
 
   @media screen and (max-width: 1300px) {
     column-count: 1;
@@ -45,4 +45,17 @@
       0% { transform: rotate(0deg) }
       100% { transform: rotate(360deg) }
     }
+}
+
+.container-btn {
+  display: flex;
+  justify-content: center;
+
+  button {
+    margin: 0 0.5% 2%;
+    background-color: $bg;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+  }
 }
