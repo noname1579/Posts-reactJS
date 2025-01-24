@@ -7,7 +7,9 @@ export default function App() {
   const [data, setdata] = useState([])
   const [loading, setLoading] = useState(true);
 
-  const url = 'https://jsonplaceholder.typicode.com/posts'
+  // const url = 'https://jsonplaceholder.typicode.com/posts'
+  const url = 'http://localhost:3000/api/data'
+
   useEffect(() => {
     async function fetchData() {
       const response = await axios.get(url)
@@ -27,8 +29,6 @@ export default function App() {
     </>
     )
   }
-
-  console.log(data)
 
   return (
     <>
