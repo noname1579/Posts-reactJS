@@ -7,8 +7,8 @@ export default function App() {
   const [data, setdata] = useState([])
   const [loading, setLoading] = useState(true);
 
-  // const url = 'https://jsonplaceholder.typicode.com/posts'
-  const url = 'http://localhost:3000/api/data'
+  const url = 'https://jsonplaceholder.typicode.com/posts'
+  // const url = 'http://localhost:3000/api/data' // попытка подключить свой сервер
 
   useEffect(() => {
     async function fetchData() {
