@@ -40,8 +40,7 @@ export default function App() {
       {/* <div className="container"> {data.map((data, i) => <Post key={i} id={data.id} title={data.title} body={data.body} /> )} </div> */}
       <Router>
       <Routes>
-        <Route path="/noname1579.github.io/posts-reactJS/:page" element={<PaginatedItems itemsPerPage={6} items={data} />} />
-        <Route path="/noname1579.github.io/posts-reactJS/" element={<a href="/posts-reactJS/page/1">Page 1</a>} />
+        <Route path="/posts-reactJS/page/:page" element={<PaginatedItems itemsPerPage={6} items={data} />} />
       </Routes>
       </Router>
     </>
