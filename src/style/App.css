@@ -50,14 +50,13 @@
   }
 }
 
-.container-btn {
+.btns {
   display: flex;
   justify-content: center;
 }
-.container-btn button {
-  margin: 0 0.5% 2%;
-  background-color: rgb(54, 50, 50);
+.btns a {
+  padding: 0 10px;
   color: #fff;
-  font-size: 18px;
-  cursor: pointer;
+  text-decoration: none;
+  font-size: 20px;
 }/*# sourceMappingURL=App.css.map */

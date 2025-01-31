@@ -47,15 +47,14 @@ $bg: rgb(54, 50, 50);
     }
 }
 
-.container-btn {
+.btns {
   display: flex;
   justify-content: center;
 
-  button {
-    margin: 0 0.5% 2%;
-    background-color: $bg;
+  a {
+    padding: 0 10px;
     color: #fff;
-    font-size: 18px;
-    cursor: pointer;
+    text-decoration: none;
+    font-size: 20px;
   }
 }
