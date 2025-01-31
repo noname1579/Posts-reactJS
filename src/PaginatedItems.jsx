@@ -26,8 +26,8 @@ export default function PaginatedItems ({ itemsPerPage, items }) {
 
       <div className='btns'>
         {Array.from({ length: totalPages }, (_, index) => (
-          <div className="btn">          
-          <Link key={index + 1} to={`/posts-reactJS/page/${index + 1}`}>{index + 1}</Link>
+          <div className="btn">
+          <Link key={index + 1} to={`/noname1579.github.io/posts-reactJS/page/${index + 1}`}>{index + 1}</Link>
           </div>
         ))}
       </div>
