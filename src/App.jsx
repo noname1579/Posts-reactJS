@@ -35,9 +35,10 @@ export default function App() {
   
 
   return (
-      <Router basename={process.env.PUBLIC_URL}>
+      <Router>
         <Routes>
-          <Route path="/posts-reactJS/:page" element={<PaginatedItems itemsPerPage={6} items={data} />} />
+          <Route path="/" element={<PaginatedItems itemsPerPage={6} items={data} />} />
+          <Route path="/posts-reactJS/page/:page" element={<PaginatedItems itemsPerPage={6} items={data} />} />
         </Routes>
       </Router>
   )
